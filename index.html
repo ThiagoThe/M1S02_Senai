@@ -55,26 +55,65 @@
         mundo.
       </p>
       <form id="form" method="post" action="">
-        <fieldset>
-          Nome*: <input type="text" id="nome" name="nome" required /><br />
-          Email*: <input type="email" name="email" id="email" required /><br />
-          Telefone:
-          <input type="tel" name="tel" id="tel" />
-          <br />
-          Gênero:
-          <input type="radio" name="gen" id="masc" value="masc" />
-          <label for="masc">Masculino</label>
-          <input type="radio" name="gen" id="fem" value="fem" />
-          <label for="fem">Feminino</label>
-          <input type="radio" name="gen" id="outro" value="outro" />
-          <label for="outro">Outro</label><br />
-          Cidade:
-          <input type="text" name="cidade" id="cidade" /><br />
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome*</label
+          ><input
+            type="text"
+            id="nome"
+            class="form-control"
+            aria-describedby="Inserir nome"
+            name="nome"
+            required
+          />
+          <label for="email" class="form-label">Email*</label
+          ><input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            aria-describedby="Insira email"
+            required
+          />
+          <label for="tel" class="form-label">Telefone</label>
+          <input type="tel" name="tel" id="tel" class="form-control" />
+          <label for="gen" class="form-label">Gênero</label>
+          <input
+            type="radio"
+            name="gen"
+            id="masc"
+            value="masc"
+            class="form-check-input"
+          />
+          <label for="masc" class="form-check-label">Masculino</label>
+          <input
+            type="radio"
+            name="gen"
+            id="fem"
+            value="fem"
+            class="form-check-input"
+          />
+          <label for="fem" class="form-check-label">Feminino</label>
+          <input
+            type="radio"
+            name="gen"
+            id="outro"
+            value="outro"
+            class="form-check-input"
+          />
+          <label for="outro" class="form-check-label">Outro</label><br />
+          <label for="cidade" class="form-label">Cidade</label>
+          <input
+            type="text"
+            name="cidade"
+            id="cidade"
+            class="form-control"
+          /><br />
           <span>(*) Preenchimento obrigatório</span>
-        </fieldset>
+          <button class="btn btn-primary" type="submit">Enviar</button>
+        </div>
       </form>
-      <button class="btn btn-primary" type="submit">Enviar</button>
     </main>
-    <footer></footer>
+    <footer>Desenvolvido por Thiago Pires 2023</footer>
+    <script src="/js/index.js"></script>
   </body>
 </html>
