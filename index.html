@@ -15,105 +15,138 @@
   </head>
   <body>
     <header></header>
-    <main>
-      <h1>Guitarras MusicPlay</h1>
-      <h2>Sons de qualidade que vão dar vida as suas músicas!</h2>
-      <img
+    <main> 
+      <div>
+        <h1>Guitarras MusicPlay</h1>
+        <h2>Sons de qualidade que vão dar vida as suas músicas!</h2>
+      </div>
+      <div>
+        <img
         src="https://musicclan.com.br/wp-content/uploads/2017/10/Tipos-de-Guitarra-768x432.png"
         alt="foto com os 6 tipos de guitarras mais populares"
-      />
-      <p>
-        A guitarra é um instrumento musical versátil e popular, amplamente
-        utilizado em uma ampla variedade de gêneros musicais, desde rock e pop
-        até jazz e blues. Com seu formato clássico e design elegante, a guitarra
-        é uma escolha popular para músicos iniciantes e profissionais.
-      </p>
+        />
+      </div>
+      <div id="texto-principal">
+        <p class="text-justify">
+          A guitarra é um instrumento musical versátil e popular, amplamente
+          utilizado em uma ampla variedade de gêneros musicais, desde rock e pop
+          até jazz e blues. Com seu formato clássico e design elegante, a guitarra
+          é uma escolha popular para músicos iniciantes e profissionais.
+        </p>
 
-      <p>
-        A guitarra tem um corpo de madeira maciça ou compensado, que fornece um
-        som rico e vibrante. As cordas são tensionadas sobre o braço da
-        guitarra, permitindo aos músicos produzirem notas distintas ao
-        apertá-las contra as fretes. A guitarra é tocada com as mãos, usando os
-        dedos para apertar as cordas e criar notas e acordes.
-      </p>
+        <p class="text-justify">
+          A guitarra tem um corpo de madeira maciça ou compensado, que fornece um
+          som rico e vibrante. As cordas são tensionadas sobre o braço da
+          guitarra, permitindo aos músicos produzirem notas distintas ao
+          apertá-las contra as fretes. A guitarra é tocada com as mãos, usando os
+          dedos para apertar as cordas e criar notas e acordes.
+        </p>
 
-      <p>
-        Existem vários tipos de guitarras disponíveis, cada um com suas próprias
-        características únicas de som e jogo. As guitarras acústicas são ideais
-        para tocar ao ar livre e apresentações ao vivo, enquanto as guitarras
-        elétricas são perfeitas para música com amplificação e efeitos. As
-        guitarras clássicas são populares entre os músicos de música clássica e
-        flamenco, enquanto as guitarras esportes são uma opção conveniente e
-        portátil para viagens ou ensaios.
-      </p>
+        <p class="text-justify">
+          Existem vários tipos de guitarras disponíveis, cada um com suas próprias
+          características únicas de som e jogo. As guitarras acústicas são ideais
+          para tocar ao ar livre e apresentações ao vivo, enquanto as guitarras
+          elétricas são perfeitas para música com amplificação e efeitos. As
+          guitarras clássicas são populares entre os músicos de música clássica e
+          flamenco, enquanto as guitarras esportes são uma opção conveniente e
+          portátil para viagens ou ensaios.
+        </p>
 
-      <p>
-        Seja você um músico iniciante ou um profissional experiente, a guitarra
-        é um instrumento incrível que pode ser apreciado por todos. Com sua
-        combinação de simplicidade e complexidade, é fácil entender por que a
-        guitarra é um dos instrumentos musicais mais amados e populares do
-        mundo.
-      </p>
-      <form id="form" method="post" action="">
-        <div class="mb-3">
-          <label for="nome" class="form-label">Nome*</label
-          ><input
-            type="text"
-            id="nome"
-            class="form-control"
-            aria-describedby="Inserir nome"
-            name="nome"
-            required
-          />
-          <label for="email" class="form-label">Email*</label
-          ><input
-            type="email"
-            name="email"
-            id="email"
-            class="form-control"
-            aria-describedby="Insira email"
-            required
-          />
-          <label for="tel" class="form-label">Telefone</label>
-          <input type="tel" name="tel" id="tel" class="form-control" />
-          <label for="gen" class="form-label">Gênero</label>
-          <input
-            type="radio"
-            name="gen"
-            id="masc"
-            value="masc"
-            class="form-check-input"
-          />
-          <label for="masc" class="form-check-label">Masculino</label>
-          <input
+        <p class="text-justify">
+          Seja você um músico iniciante ou um profissional experiente, a guitarra
+          é um instrumento incrível que pode ser apreciado por todos. Com sua
+          combinação de simplicidade e complexidade, é fácil entender por que a
+          guitarra é um dos instrumentos musicais mais amados e populares do
+          mundo.
+        </p>
+      </div>
+      <hr>
+      <div id="titulo-form"><h3>Ficou interessado?</h3>
+      <h6>Preencha o formúlario e entraremos em contato:</h6></div>
+      <form id="form" method="post" class="form-horizontal">
+        <div class="form-group">
+          <label for="nome" class="col-sm-2 control-label">Nome*</label>
+          <div class="col-sm-10">
+            <input
+              type="text"
+              id="nome"
+              class="form-control"
+              aria-describedby="Inserir nome"
+              name="nome"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email" class="col-sm-2 control-label">Email*</label>
+          <div class="col-sm-10">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              aria-describedby="Insira email"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="tel" class="col-sm-2 control-label">Telefone</label>
+          <div class="col-sm-2">
+            <input type="tel" name="tel" id="tel" class="form-control" />
+          </div>
+        </div>
+        <div class="radio form-group">
+          <label for="gen" class="col-sm-2 control-label">Gênero</label>
+          <div class="col-sm-10"> 
+            <label for="masc" class="radio-inline">
+              <input
+              type="radio"
+              name="gen"
+              id="masc"
+              value="masc"/>
+              Masculino</label>
+            <label for="fem" class="radio-inline">
+              <input
             type="radio"
             name="gen"
             id="fem"
-            value="fem"
-            class="form-check-input"
-          />
-          <label for="fem" class="form-check-label">Feminino</label>
-          <input
+            value="fem"/>
+          Feminino</label>
+            <label for="outro" class="radio-inline">
+              <input
             type="radio"
             name="gen"
             id="outro"
-            value="outro"
-            class="form-check-input"
-          />
-          <label for="outro" class="form-check-label">Outro</label><br />
-          <label for="cidade" class="form-label">Cidade</label>
-          <input
-            type="text"
-            name="cidade"
-            id="cidade"
-            class="form-control"
-          /><br />
-          <span>(*) Preenchimento obrigatório</span>
-          <button class="btn btn-primary" type="submit">Enviar</button>
+            value="outro"/>
+          Outro</label>
+        </div><br>
+        <div class="form-group">
+          <label for="cidade" class="col-sm-2 control-label">Cidade</label>
+          <div class="col-sm-10">
+            <input type="text" name="cidade" id="cidade" class="form-control" />
+          </div>
+          <br />
+          <div class="col-sm-10">
+            <span>(*) Preenchimento obrigatório</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button class="btn btn-primary" type="submt">Enviar</button>
+          </div>
         </div>
       </form>
     </main>
-    <footer>Desenvolvido por Thiago Pires 2023</footer>
+    <hr>
+    <footer>
+    
+      <address>
+        <strong>Thiago Pires</strong><br>
+        <a href="mailto:#">thppdev@gmail.com</a><br> <abbr title="Phone">Tel:</abbr> (48) 99151-0887 
+      </address>
+    </footer>
     <script src="/js/index.js"></script>
   </body>
 </html>

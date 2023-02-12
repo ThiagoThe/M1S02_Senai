@@ -1,1 +1,27 @@
+h1 {
+  padding: 10px;
+}
 
+h2 {
+  padding: 15px;
+}
+
+img {
+  width: 100%;
+  margin: 10px;
+}
+
+#texto-principal {
+  margin: 10px;
+  padding-bottom: 15px;
+}
+
+#titulo-form {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
