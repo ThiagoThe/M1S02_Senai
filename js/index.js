@@ -6,6 +6,9 @@ btn.addEventListener("click", function () {
 
 alert("Compre uma guitarra!");
 
+var userName = prompt("Digite seu nome:");
+alert("Olá, " + userName + "! Seja bem vindo.");
+
 document.getElementById("sair").addEventListener("click", function (event) {
   var sairPagina = confirm("Você tem certeza que deseja sair da página?");
   if (!sairPagina) {
