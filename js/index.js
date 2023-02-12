@@ -5,3 +5,10 @@ btn.addEventListener("click", function () {
 });
 
 alert("Compre uma guitarra!");
+
+document.getElementById("sair").addEventListener("click", function (event) {
+  var sairPagina = confirm("Você tem certeza que deseja sair da página?");
+  if (!sairPagina) {
+    event.preventDefault();
+  }
+});
